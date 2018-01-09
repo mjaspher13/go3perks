@@ -299,9 +299,9 @@
                                                                                                     position: imus,
                                                                                                     map: map
                                                                                                     });
-                                                                                                    console.log(213);
+                                                                                                    
                                                                                             })();
-                                                                                        }, 1500);
+                                                                                        }, 1855);
                                                                                            
                                                                                     });
                                                                                 
