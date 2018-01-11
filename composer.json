@@ -10,6 +10,7 @@
         "fideloper/proxy": "~3.3",
         "geoip/geoip": "~1.16",
         "laravel/framework": "5.5.*",
+        "laravel/passport": "^4.0",
         "laravel/tinker": "~1.0",
         "pragmarx/tracker": "^3.2",
         "spatie/laravel-activitylog": "^2.3",

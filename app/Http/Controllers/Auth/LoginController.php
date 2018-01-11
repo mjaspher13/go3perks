@@ -51,7 +51,7 @@ class LoginController extends Controller
                 ->causedBy($request->user()->id)
                 ->log('Login');
             if ($request->user()){
-                if ($request->user()->role === 0) {
+                if ($request->user()->role === 4) {
                     return redirect('/admin');
                 } else if ($request->user()->role === 1) {
                     return redirect('/merchant');

@@ -34,7 +34,7 @@ class UsersSeeder extends Seeder
             'mobile' => '1234567890',
             'user_type' => 0,
             'status' => 'A',
-            'role' => 0
+            'role' => 4
         ]);
         
         DB::table('users')->insert([

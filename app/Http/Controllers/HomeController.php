@@ -42,6 +42,12 @@ class HomeController extends Controller
         {
             $merchants = Merchant::where(HUser::getRoleId(), Auth::user()->id)->get();
             return view($home . '/dashboard');
+        } 
+        
+        else if($home == 'admin')
+        {
+            //$merchants = Merchant::where(HUser::getRoleId(), Auth::user()->id)->get();
+            return view($home . '/dashboard');
         }
         
     }

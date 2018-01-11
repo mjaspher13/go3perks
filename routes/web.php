@@ -35,3 +35,12 @@ Route::get('/', 'CustomerController@Index');
 Route::group(['prefix' => 'merchant', 'middleware' => ['auth','handleRole:1']], function () {
 Route::get('/', 'MerchantController@Index');
 });
+
+//Admin
+Route::group(['prefix' => 'admin', 'middleware' => ['auth','handleRole:4']], function () {
+Route::get('/', 'AdminController@Index');
+Route::get('/clients', 'AdminController@Clients');
+Route::get('/authorizedclients', 'AdminController@AuthorizedClients');
+Route::get('/personalaccesstokens', 'AdminController@PersonalAccessTokens');
+});
+

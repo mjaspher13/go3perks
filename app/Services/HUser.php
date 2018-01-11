@@ -20,6 +20,9 @@ class HUser
 			case 3:
 				$role = 'agent_id';
 				break;
+			case 4:
+				$role = 'admin_id';
+				break;
 		}
 		return $role;
 	}
@@ -35,6 +38,9 @@ class HUser
 				break;
 			case 3:
 				$role = 'agent';
+				break;
+			case 4:
+				$role = 'admin';
 				break;
 		}
 		return $role;

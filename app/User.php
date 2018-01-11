@@ -2,12 +2,13 @@
 
 namespace App;
 
+use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use HasApiTokens, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -35,6 +36,11 @@ class User extends Authenticatable
     public function merchant()
     {
         return $this->belongsTo('App\Merchant', 'account_id', 'agent_id');
+    }
+
+    public function findForPassport($identifier) 
+    {
+        return $this->orWhere('email', $identifier)->orWhere('username', $identifier)->first();
     }
 
 }
