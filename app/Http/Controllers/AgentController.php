@@ -53,6 +53,10 @@ class AgentController extends Controller
 
     public function CreateMerchant ()
     {
-        return view('agent/merchant/create');
+        $countries = app('pragmarx.countries');
+
+        $countries = $countries->all()->pluck('name.common');
+
+        return view('agent/merchant/create')->with('countries', $countries);
     }
 }

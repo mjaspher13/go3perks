@@ -22,6 +22,9 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <!-- Scripts -->
     <script async defer src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3wXe6QYs4TSAiOosIUojgXRVmqtQCj6M&v=3.exp&&callback=initMap"></script>
+    
 </head>
 <body>
     <div id="app">

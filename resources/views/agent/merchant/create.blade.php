@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3wXe6QYs4TSAiOosIUojgXRVmqtQCj6M"></script>
+
 <div id="wrapper">
 
         <!-- Sidebar -->
@@ -40,37 +40,37 @@
                                                         <div class="panel-body">
                                                             <form>
                                                                 <div class="form-group">
-                                                                    <label class="project-label">Merchant Name
+                                                                    <label class="merchant-name">Merchant Name
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. Go3 Solutions Infotech" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Contact Last Name
+                                                                    <label class="contact-lastname">Contact Last Name
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. Musk" class="form-control">
                                                                     <br>
                                                                     <br>
                                                                     
-                                                                    <label class="project-label">Contact First Name
+                                                                    <label class="contact-firstname">Contact First Name
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. Elon" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Username
+                                                                    <label class="username">Username
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. tesla007" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Password
+                                                                    <label class="password">Password
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="password" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Email Address
+                                                                    <label class="email">Email Address
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. elonm@goetu.com" class="form-control">
                                                                     <br>
@@ -90,37 +90,37 @@
                                                             <form>
                                                                 <div class="form-group">
                                                                     
-                                                                    <label class="project-label">Support Email Address
+                                                                    <label class="support-email">Support Email Address
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="e.g. elomsup@goetu.com" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Support Contact No
+                                                                    <label class="support-contact">Support Contact No
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="" class="form-control">
                                                                     <br>
                                                                     <br>
                                                                     
-                                                                    <label class="project-label">Telephone No
+                                                                    <label class="telephone">Telephone No
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Mobile Phone
+                                                                    <label class="mobile-phone">Mobile Phone
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Fax
+                                                                    <label class="fax">Fax
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="" class="form-control">
                                                                     <br>
                                                                     <br>
 
-                                                                    <label class="project-label">Check in Rate
+                                                                    <label class="checkin-rate">Check in Rate
                                                                     <span class="text-danger">*</span></label>
                                                                     <input type="text" placeholder="" class="form-control">
                                                                     <br>
@@ -145,48 +145,49 @@
                                                                             <form>
                                                                                 <div class="form-group">
                                                                                     
-                                                                                    <label class="project-label">Address
+                                                                                    <label class="addrress">Address
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
 
-                                                                                    <label class="project-label">Country
+                                                                                    <label class="country">Country
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
                                                                                     
-                                                                                    <label class="project-label">City
+                                                                                    <label class="city">City
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
 
-                                                                                    <label class="project-label">State
+                                                                                    <label class="state">State
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
 
-                                                                                    <label class="project-label">Zip Code
+                                                                                    <label class="zip-code">Zip Code
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
 
-                                                                                    <label class="project-label">Latitude
+                                                                                    <label class="latitude">Latitude
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
 
-                                                                                    <label class="project-label">Longtitude
+                                                                                    <label class="longitude">Longtitude
                                                                                     <span class="text-danger">*</span></label>
                                                                                     <input type="text" placeholder="" class="form-control">
                                                                                     <br>
                                                                                     <br>
-                                                                        
+                                                                                    <asd></asd>     
+                                                                                    {{$countries}}
                                                                     
                                                                                 </div>
                                                                             </form>
@@ -282,30 +283,5 @@
                 </div> -->
 
               
-    </div>
-    
-                                                                                <script>
-                                                                                    $(document).ready(function () {
-                                                                                        setTimeout(function() {
-                                                                                                (function initMap() {
-                                                                                                    var imus = {lat: 40.730610, lng: -73.935242};
-                                                                                                    
-                                                                                                    var map = new google.maps.Map(document.getElementById('map'), {
-                                                                                                    zoom: 13,
-                                                                                                    center: imus
-                                                                                                    });
-
-                                                                                                    var marker = new google.maps.Marker({
-                                                                                                    position: imus,
-                                                                                                    map: map
-                                                                                                    });
-                                                                                                    
-                                                                                            })();
-                                                                                        }, 1855);
-                                                                                           
-                                                                                    });
-                                                                                
-                                                                                </script>
-                                                                       
-                                                                                
+    </div>                                                                          
 @endsection

@@ -6,8 +6,9 @@
  */
 
 require('./bootstrap');
-
+import Vuex from 'vuex';
 window.Vue = require('vue');
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,9 +16,12 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.use(Vuex)
 
-
+Vue.component(
+    'example-component', 
+    require('./components/ExampleComponent.vue')
+);
 
 Vue.component(
     'passport-clients',
@@ -34,6 +38,27 @@ Vue.component(
     require('./components/passport/PersonalAccessTokens.vue')
 );
 
+Vue.component(
+    'asd', 
+    require('./components/passport/Table.vue')
+);
+
 const app = new Vue({
-    el: '#app'
+    store,
+    el: '#app',
+    render: h => h(App)
 });
+
+const store = new Vuex.Store({
+    state: {
+      counter: 0
+    },
+    getters: {
+      counter: state => state.counter * 2
+    },
+    mutations: {
+      increment: state => state.counter++,
+      decrement: state => state.counter--
+    }
+  })
+

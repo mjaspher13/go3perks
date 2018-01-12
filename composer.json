@@ -12,6 +12,8 @@
         "laravel/framework": "5.5.*",
         "laravel/passport": "^4.0",
         "laravel/tinker": "~1.0",
+        "mledoze/countries": "1.8.0",
+        "pragmarx/countries": "^0.1.1",
         "pragmarx/tracker": "^3.2",
         "spatie/laravel-activitylog": "^2.3",
         "tymon/jwt-auth": "0.5.*"
