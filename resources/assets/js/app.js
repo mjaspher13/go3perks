@@ -9,6 +9,13 @@ require('./bootstrap');
 import Vuex from 'vuex';
 window.Vue = require('vue');
 
+import loading from 'vue-full-loading';
+import ToggleButton from 'vue-js-toggle-button'
+
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+Vue.use(VueAxios, axios);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -17,6 +24,8 @@ window.Vue = require('vue');
  */
 
 Vue.use(Vuex)
+
+Vue.use(ToggleButton)
 
 Vue.component(
     'example-component', 
@@ -39,14 +48,13 @@ Vue.component(
 );
 
 Vue.component(
-    'asd', 
-    require('./components/passport/Table.vue')
+    'merchant-profile', 
+    require('./components/MerchantProfile.vue')
 );
 
 const app = new Vue({
     store,
-    el: '#app',
-    render: h => h(App)
+    el: '#app'
 });
 
 const store = new Vuex.Store({

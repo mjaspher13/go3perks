@@ -22,6 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Agent
 Route::group(['prefix' => 'agent', 'middleware' => ['auth','handleRole:3']], function () {
 Route::get('/', 'AgentController@Index');
+Route::get('/countries', 'AgentController@Countries');
+Route::get('/states/{country}', 'AgentController@States');
+//Route::get('/cities/{state}', 'AgentController@Cities');
 Route::get('/create', 'AgentController@CreateMerchant');
 Route::get('/edit/{merchantId}', 'AgentController@ViewMerchant');
 });

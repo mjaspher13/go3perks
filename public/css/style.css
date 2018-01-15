@@ -33,6 +33,10 @@
     background-color: #8446b3;
   }
 
+  .sidebar-nav li :hover{
+    color: white !important;
+  }
+
   #sidebar-wrapper {
     top: 0;
     margin-left: -230px;

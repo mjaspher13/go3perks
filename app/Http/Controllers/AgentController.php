@@ -53,10 +53,25 @@ class AgentController extends Controller
 
     public function CreateMerchant ()
     {
-        $countries = app('pragmarx.countries');
-
-        $countries = $countries->all()->pluck('name.common');
-
-        return view('agent/merchant/create')->with('countries', $countries);
+        return view('agent/merchant/create');
     }
+
+    public function Countries ()
+    {
+        $countries = HELPERCountries();
+        return response()->json($countries);
+    }
+
+    public function States ($country,  Request $request)
+    {
+        $states = HELPERStates($country);
+        return response()->json($states);
+    }
+
+    public function Cities ($state,  Request $request)
+    {
+        $cities = HELPERCities($state);
+        return response()->json($cities);
+    }
+
 }

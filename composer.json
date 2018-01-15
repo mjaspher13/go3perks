@@ -15,6 +15,7 @@
         "mledoze/countries": "1.8.0",
         "pragmarx/countries": "^0.1.1",
         "pragmarx/tracker": "^3.2",
+        "predis/predis": "^1.1",
         "spatie/laravel-activitylog": "^2.3",
         "tymon/jwt-auth": "0.5.*"
     },
